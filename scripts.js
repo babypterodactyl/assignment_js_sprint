@@ -1,21 +1,32 @@
 // FILL IN THE FUNCTIONS BELOW
 
 var sprintFunctions = {
-    largestEl: function() {
-        var input = [2, 4, 2, 1, 5, 2, 5]
-        return Math.max(...input)
-    },
+        largestEl: function() {
+            var input = [2, 4, 2, 1, 5, 2, 5]
+            return Math.max(...input)
+        },
 
-    reversed: function(input) {
-        input = "I am a special string!"
-        var secondString = input.split("")
-        var backwardsArray = secondString.reverse();
-        var finalArray = backwardsArray.join("");
-        return finalArray;
-    },
+        reversed: function(input) {
+            input = "I am a special string!"
+            var secondString = input.split("")
+            var backwardsArray = secondString.reverse();
+            var finalArray = backwardsArray.join("");
+            return finalArray;
+        },
 
-    loudSnakeCase: function() {
-        // your code here
+        loudSnakeCase: function() {
+            var input = "I am a strange code. I like it though!";
+            str = input.split(" ");
+
+            for (var i = 0; i < str.length; i++) {
+                str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+            }
+
+            str = str.join('_');
+        }
+
+        str = str.join('_');
+
     },
 
     compareArrays: function() {
