@@ -28,8 +28,19 @@ var sprintFunctions = {
     },
 
     compareArrays: function() {
-        // your code here (replace the return)
-        return "Finish compareArrays first!"
+      var startArr = [1,2,4,3];
+      var diffArr = [1,2,3,4];
+
+      var startArr = startArr.toString();
+      var diffArr = diffArr.toString();
+
+      if (startArr === diffArr) {
+        return true;
+      } else {
+        return false;
+      }
+
+
     },
 
     fizzBuzz: function() {
