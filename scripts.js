@@ -27,19 +27,13 @@ var sprintFunctions = {
         return str
     },
 
-    compareArrays: function() {
-      var startArr = [1,2,4,3];
-      var diffArr = [1,2,3,4];
+    compareArrays: function(firstArray,secondArray) {
 
-      var startArr = startArr.toString();
-      var diffArr = diffArr.toString();
-
-      if (startArr === diffArr) {
+      if(firstArray === secondArray) {
         return true;
       } else {
         return false;
       }
-
 
     },
 
