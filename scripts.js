@@ -37,27 +37,22 @@ var sprintFunctions = {
 
     },
 
-    fizzBuzz: function() {
+    fizzBuzz: function(input) {
 
         var numberArray = [];
 
-        for (var i = 1; i <= 16; i++) {
-            numberArray.push(i);
+        for (var i = 1; i <= input.length; i++) {
+            if ((numberArray[i] % 3 === 0) && (numberArray[i] % 5 === 0)) {
+                numberArray.push("FIZZBUZZ")
+            } else if (input % 3 === 0) {
+                numberArray.push("FIZZ")
+            } else if (input % 5 === 0) {
+                numberArray.push("BUZZ")
+            } else {
+                numberArray.push(i);
+            }
         }
-
-        console.log(numberArray);
-
-        if (input % 3 === 0 && input % 5 === 0) {
-            var replacement = "FIZZBUZZ"
-        } else if (input % 3 === 0) {
-            replacement = "FIZZ"
-        } else if (input % 5 === 0) {
-            replacement = "BUZZ"
-        } else {
-            console.log(false);
-        }
-
-
+        return numberArray;
     },
 
     myMap: function() {
