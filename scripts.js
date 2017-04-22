@@ -27,18 +27,37 @@ var sprintFunctions = {
         return str
     },
 
-    compareArrays: function(firstArray,secondArray) {
+    compareArrays: function(firstArray, secondArray) {
 
-      if(firstArray === secondArray) {
-        return true;
-      } else {
-        return false;
-      }
+        if (firstArray === secondArray) {
+            return true;
+        } else {
+            return false;
+        }
 
     },
 
     fizzBuzz: function() {
-        // your code here
+
+        var numberArray = [];
+
+        for (var i = 1; i <= 16; i++) {
+            numberArray.push(i);
+        }
+
+        console.log(numberArray);
+
+        if (input % 3 === 0 && input % 5 === 0) {
+            var replacement = "FIZZBUZZ"
+        } else if (input % 3 === 0) {
+            replacement = "FIZZ"
+        } else if (input % 5 === 0) {
+            replacement = "BUZZ"
+        } else {
+            console.log(false);
+        }
+
+
     },
 
     myMap: function() {
