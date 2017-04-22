@@ -42,16 +42,17 @@ var sprintFunctions = {
         var numberArray = [];
 
         for (var i = 1; i <= input.length; i++) {
-            if ((numberArray[i] % 3 === 0) && (numberArray[i] % 5 === 0)) {
+
+            if ((i % 3 === 0) && (i % 5 === 0)) {
                 numberArray.push("FIZZBUZZ")
-            } else if (input % 3 === 0) {
+            } else if (i % 3 === 0) {
                 numberArray.push("FIZZ")
-            } else if (input % 5 === 0) {
+            } else if (i % 5 === 0) {
                 numberArray.push("BUZZ")
             } else {
                 numberArray.push(i);
             }
-        }
+          }
         return numberArray;
     },
 
