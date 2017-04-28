@@ -58,7 +58,7 @@ var sprintFunctions = {
           }
       }
       return numberArray
-};
+},
 
 
     myMap: function() {
