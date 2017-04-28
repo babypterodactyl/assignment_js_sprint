@@ -37,24 +37,29 @@ var sprintFunctions = {
 
     },
 
-    fizzBuzz: function(input) {
+    fizzBuzz: function(whatDoIPutHere) {
+      //I feel like I need to declare a variable for the value that the test will pass into the function here (which would be 16), so I can then use it in the for loop below, but I cant figure out how to successfully do this
+      var numberArray = [];
 
-        var numberArray = [];
+      for (var i = 1; i <= whatDoIPutHere; i++) {
 
-        for (var i = 1; i <= input.length; i++) {
+          if ((i % 3 === 0) && (i % 5 === 0)) {
+              numberArray.push("FIZZBUZZ")
 
-            if ((i % 3 === 0) && (i % 5 === 0)) {
-                numberArray.push("FIZZBUZZ")
-            } else if (i % 3 === 0) {
-                numberArray.push("FIZZ")
-            } else if (i % 5 === 0) {
-                numberArray.push("BUZZ")
-            } else {
-                numberArray.push(i);
-            }
+          } else if (i % 3 === 0) {
+              numberArray.push("FIZZ")
+
+          } else if (i % 5 === 0) {
+              numberArray.push("BUZZ")
+
+          } else {
+              numberArray.push(i)
+
           }
-        return numberArray;
-    },
+      }
+      return numberArray
+};
+
 
     myMap: function() {
         // your code here
